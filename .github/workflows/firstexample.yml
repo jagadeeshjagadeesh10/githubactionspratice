@@ -5,9 +5,14 @@ on: push
 jobs:
     first_job:
         runs-on: ubuntu-latest
-        steps: 
+        steps:
+            - name: checkout epo
+              uses: actions/checkout@v4 
             - name: welcome message
               run: echo "my first github trigger"
             
             - name: List files
-              run: list    
+              run: list  
+            
+            - name: Read File
+              run: cat Readme.md             
