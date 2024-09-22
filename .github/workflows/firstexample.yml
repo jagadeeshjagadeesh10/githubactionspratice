@@ -12,7 +12,7 @@ jobs:
               run: echo "my first github trigger"
             
             - name: List files
-              run: list  
+              run: ls 
             
             - name: Read File
               run: cat README.md             
