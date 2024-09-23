@@ -7,13 +7,15 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: checkout epo
-              uses: actions/checkout@v4 
+              uses: actions/checkout@v4
+              
+            - name: List files
+              run: ls -ltra
 
-            - name: List and Read file
-              run: 
-                echo "my first github trigger"
-                ls -ltra
-                cat README.md
+            - name: Executing shell script 
+              run: ./script.sh
+              
+              
             
             #- name: List files
             #  run: ls 
