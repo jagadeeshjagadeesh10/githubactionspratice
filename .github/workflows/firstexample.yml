@@ -12,11 +12,12 @@ jobs:
             - name: List files
               run: ls -ltra
 
-            - name: Executing shell script 
-              run: |
-               chmod 400 ascii-shell.sh
-               ./ascii-shell.sh
-              
+             - name: Execute Shell Script
+               run: |
+                set -e  # Exit immediately if a command exits with a non-zero status
+                chmod 400 ascii-shell.sh
+                ./ascii-shell.sh
+               shell: bash
               
             
             #- name: List files
