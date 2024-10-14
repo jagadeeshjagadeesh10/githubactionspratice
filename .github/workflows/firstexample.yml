@@ -4,7 +4,7 @@ on: push
 
 jobs:
     first_job:
-        runs-on: ubuntu-latest
+        runs-on: windows-latest
         steps:
             - name: checkout epo
               uses: actions/checkout@v4 
