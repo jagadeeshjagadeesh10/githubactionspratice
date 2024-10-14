@@ -11,7 +11,7 @@ jobs:
             - name: welcome message
               run: echo "my first github trigger"
             
-            - name: List files
+            - name: List filesss
               run: ls 
             
             - name: Read File
