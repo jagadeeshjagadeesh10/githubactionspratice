@@ -1,0 +1,18 @@
+
+name: Variable-testing 
+
+on:
+ push 
+env:
+  cloud: AWS
+jobs:
+  getting_started:
+   runs-on: ubuntu-latest
+   env:
+    getting: team
+   steps: 
+    - name: "Hello Cloud"
+      run: echo "$getting $First_Name is using $cloud with the project ${{vars.PROJECT_ID}}!"
+      env:
+        First_Name: JD
+  
