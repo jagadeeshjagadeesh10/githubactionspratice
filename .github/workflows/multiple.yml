@@ -1,0 +1,30 @@
+name: Multiple-jobs
+
+on:
+  push:
+    branches:
+      - actions
+
+jobs:
+  job1:
+    name: First Job
+    runs-on: ubuntu-latest
+    environment: dev
+    steps: 
+      - name: "Checking secrets and variables value"
+        run: |
+          echo "variable value: ${{ vars.SUBNET }}"
+          echo "variable value: ${{ vars.DATABASE }}"
+          echo "variable value: ${{ vars.VPC }}"
+          echo "Secret value is ${{ secrets.CLOUD }}"
+    
+
+  job2:
+    name: Second Job
+    runs-on: ubuntu-latest
+    environment: qa
+    steps: 
+      - name: "Checking secrets and variables value"
+        run: |
+          echo "variable value: ${{ vars.ACCOUNTNUMBER }}"
+   
