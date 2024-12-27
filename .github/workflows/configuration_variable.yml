@@ -2,7 +2,7 @@
 name: Variable-testing 
 
 on:
- push 
+ workflow_dispatch 
 env:
   cloud: AWS
 jobs:
