@@ -9,9 +9,9 @@ jobs:
             - name: checkout epo
               uses: actions/checkout@v4 
             - name: welcome message
-              run: echo "my first github trigger"
+              run: echo "my first GitHub trigger"
             
-            - name: List filesss
+            - name: List files
               run: ls 
             
             - name: Read File
