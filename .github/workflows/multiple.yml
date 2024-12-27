@@ -25,5 +25,5 @@ jobs:
     steps: 
       - name: "Checking secrets and variables value"
         run: |
-          echo "variable value: ${{ vars.ACCOUNTNUMBER }}"
+          echo "AWS Account number is: ${{ vars.ACCOUNTNUMBER }}"
    
