@@ -1,6 +1,10 @@
 name: my first flow 
 
-on: push 
+on: 
+ push:
+   branches: ["second"]
+ pull_request:
+   branches: ["main"]
 
 jobs:
     first_job:
