@@ -1,9 +1,8 @@
 name: Multiple-jobs
 
 on:
-  push:
-    branches:
-      - actions
+  push
+    
 
 jobs:
   job1:
